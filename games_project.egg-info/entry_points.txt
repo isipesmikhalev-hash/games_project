@@ -1,0 +1,2 @@
+[console_scripts]
+vd-main = games_project_mikhalev.VD_games.scripts.VD_main:main
