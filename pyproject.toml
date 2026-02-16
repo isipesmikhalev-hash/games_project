@@ -4,10 +4,28 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "prompt>=0.4.1",
+]
 
 [tool.uv]
 package = true
 
+[dependency-groups]
+dev = [
+    "ruff>=0.15.1",
+]
 [project.scripts]
-vd-main = "games_project_mikhalev.VD_games.scripts.VD_main:main"
+vd-main = "games_project_mikhalev.VD_games.scripts.VD_games:main"
+vd-even = "games_project_mikhalev.VD_games.scripts.VD_even:main"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+extend-select = [
+    "I",   # isort
+    "UP",  # pyupgrade
+    "D",   # pydocstyle
+    "Q",   # flake8-quotes
+]

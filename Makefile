@@ -2,10 +2,13 @@ install:
 	uv sync
 
 VD-games:
-	 vd-main
+	uv run vd-main
 
 build:
 	uv build
 
 package-install:
 	uv tool install dist/*.whl
+
+lint:
+	uv run ruff check games_project_mikhalev/VD_games/
