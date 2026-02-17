@@ -4,12 +4,12 @@ from .cli import welcome_user
 
 
 def play_game(game_module) -> None:
-    """
-    Run the game engine.
-    
+    """Run the game engine.
+
     Args:
         game_module: Module with game logic containing
                     DESCRIPTION and generate_round() function
+
     """
     name = welcome_user()
     print(game_module.DESCRIPTION)

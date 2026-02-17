@@ -1,8 +1,7 @@
 """Calculator game module."""
 
-import random
 import operator
-
+import random
 
 DESCRIPTION = "What is the result of the expression?"
 
@@ -13,9 +12,9 @@ def generate_round():
     num2 = random.randint(1, 20)
     
     operations = [
-        ('+', operator.add),
-        ('-', operator.sub),
-        ('*', operator.mul),
+        ("+", operator.add),
+        ("-", operator.sub),
+        ("*", operator.mul),
     ]
     
     op_symbol, op_func = random.choice(operations)

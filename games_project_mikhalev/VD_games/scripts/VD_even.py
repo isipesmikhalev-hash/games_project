@@ -1,6 +1,7 @@
 """Even number check game."""
 
 import random
+
 from ..cli import welcome_user
 
 

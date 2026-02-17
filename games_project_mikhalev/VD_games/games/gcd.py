@@ -1,8 +1,7 @@
 """GCD game module."""
 
-import random
 import math
-
+import random
 
 DESCRIPTION = "Find the greatest common divisor of given numbers."
 
