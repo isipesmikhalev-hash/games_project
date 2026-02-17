@@ -1,3 +1,5 @@
 [console_scripts]
+vd-calc = games_project_mikhalev.VD_games.scripts.VD_calc:main
 vd-even = games_project_mikhalev.VD_games.scripts.VD_even:main
+vd-gcd = games_project_mikhalev.VD_games.scripts.VD_gcd:main
 vd-main = games_project_mikhalev.VD_games.scripts.VD_games:main
